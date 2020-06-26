@@ -3,12 +3,22 @@
     <head>
         <title>Home | Jia Von</title>
 
+        <!-- Set the character set, so the browser knows which character set should be loaded and valid for this webpage.-->
+        <meta charset="UTF-8">
+
         <!--For modern responsive web developent: -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--Meta Data: search engine will look for content here-->
         <meta name="description" content="A website about Jia Von.">
         <meta name="author" content="Jia Von">
+
+        <!--Style(s):-->
+        <link rel="stylesheet" type= "text/css" href="css/main.css">
+
+        <!--Script(s):-->
+        <!-- defer attribute will cause this cript to wait until the body is loaded before executing (important for DOM / element manipulation by scripts)-->
+        <script src="js/scripts.js" type="text/javascript" defer></script>
     </head>
     <body>
         <h1>Home</h1><!--major subtopic-->
@@ -29,15 +39,18 @@
         <p>
             I'd like to share with each of you, my very favourite picture! It is an illustration featuring wind turbines. Very Cool, check it out below!
             <figure>
-                <img src="img/wind_turbine_pixabay.jpg" alt="A blue illustration of wind turbines.">
+                <!--src is the location of the image.-->
+                <!--alt is "alternate text" to describe the image.-->
+                <!--title is a "pop-up" tooltip, for when you hover over the image-->
+                <img src="img/wind_turbine_pixabay.jpg" alt="A blue illustration of wind turbines." title="A blue illustration of wind turbines.">
                 <figcaption>
                   Illustration credited to:
-                  <a href="https://pixabay.com/users/rdaudt-7418264/">
+                  <!--target="_blank" makes the link open in a brand new tab (leaing the original tab open.)-->
+                  <a href="https://pixabay.com/users/rdaudt-7418264/" target="_blank" title="Cliek here to view the original author's profile.">
                     rdaudt
                   </a>
                 </figcaption>
               </figure>
-          
         </p>
         <h3></h3> <!--subtopic related to h2-->
     </body>
