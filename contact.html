@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home | Jia Von</title>
+  <head>
+    <title>Contact | Jia Von</title>
 
-        <!-- Set the character set, so the browser knows which character set should be loaded and valid for this webpage.-->
-        <meta charset="UTF-8">
+    <!-- Set the character set, so the browser knows which character set should be loaded and valid for this webpage. -->
+    <meta charset="UTF-8">
 
-        <!--For modern responsive web developent: -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For modern responsive web development: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Meta Data: search engine will look for content here-->
-        <meta name="description" content="A website about Jia Von.">
-        <meta name="author" content="Jia Von">
+    <!-- Meta Data: -->
+    <meta name="description" content="A website about Jia Von.">
+    <meta name="author" content="Jia Von">
 
-        <!--Style(s):-->
-        <link rel="stylesheet" type= "text/css" href="css/main.css">
+    <!-- Style(s): -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-        <!--Script(s):-->
-        <!-- defer attribute will cause this cript to wait until the body is loaded before executing (important for DOM / element manipulation by scripts)-->
-        <script src="js/scripts.js" type="text/javascript" defer></script>
-    </head>
-    <body>
-     <h1>Contact</h1>
-        <footer>
-            <h2>Footer</h2>
-            <p>
-                &copy; Copyright 2020 TECHCareers; 
-                All Rights Reserved
-            </p>
-        </footer>
-    </body>
+    <!-- Script(s): -->
+    <!-- defer attribute will cause this script to wait until the body is loaded before executing (important for DOM / element manipulation by scripts) -->
+    <script src="js/scripts.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <h1>Contact</h1>
+    <header>
+      <h2>Navigation</h2>
+      <nav><!-- Navigation. -->
+        <ul>
+          <li><a href="index.html">Home</a><!-- Anchor element (hyperlink.) --></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="contact.html" method="GET"><!--the get request will take user input to send to the server, there is question mark sign and 
+    then it's going to have question mark and change info at the of the page. The % sign is a @ sign for the email. . %21 symbols are just representation
+    for characters that can't be read be the url-->
+      <label for="name">Please enter your name:</label>
+      <input id="name" name="name" type="text">
+      <!--'GET' method post the explicit URL while 'POST' medthod doesn't post the explicit URL (mainly used for secured login websites)-->
+
+      <br />
+
+      <label for="password">Please enter your password:</label>
+      <input id="password" name="password" type="text">
+
+      <br />
+
+      <label for="message">Please leave us a message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <br />
+
+      <input type="submit" value="Submit Me!">
+    </form>
+    <footer>
+      <h2>Footer</h2>
+      <p>
+        &copy; Copyright 2020 TECHCareers;
+        All Rights Reserved
+      </p>
+    </footer>
+  </body>
 </html>
